@@ -24,5 +24,5 @@ test('peek on stack with empty input', () => {
     stack.push("test");
     stack.push("");
     expect(stack.peek()).toBeDefined();
-    expect(stack.peek()).toBe(null); // medvetet fel, skacken ska vara "", inte null.
+    expect(stack.peek()).toBe(""); // medvetet fel, skacken ska vara "", inte null.
 });

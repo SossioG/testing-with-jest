@@ -40,5 +40,5 @@ test('By clicking on "Poppa stacken!" it should delete the last item', async () 
 	let alert = await driver.switchTo().alert();
 	let alertText = await alert.getText();
 	await alert.accept();
-	expect(alertText).toEqual("Tog bort undefined"); // medvetet fel, sista stacken bör vara "Bananer"
+	expect(alertText).toEqual("Tog bort Bananer"); // medvetet fel, sista stacken bör vara "Bananer"
 });
