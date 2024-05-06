@@ -17,3 +17,12 @@ test('peek on stack with two or more elements returns the top element', () => {
     expect(stack.peek()).toBeDefined();
     expect(stack.peek()).toBe(42);
 });
+
+// Egen test
+test('peek on stack with empty input', () => {
+    stack.push(10);
+    stack.push("test");
+    stack.push("");
+    expect(stack.peek()).toBeDefined();
+    expect(stack.peek()).toBe(null); // medvetet fel, skacken ska vara "", inte null.
+});
